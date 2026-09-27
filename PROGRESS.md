@@ -184,7 +184,9 @@ User wants an antigravity-agent-style "turbo" mode: AI sends without asking firs
 1. ✅ IG chat drop-in import → tone learning (backend parser + Android file picker UI).
 2. ✅ APK at **`D:/ToneAI.apk`** (18,661,056 bytes, debug-signed, installable).
 3. ✅ Turbo mode (AI sends without prior approval, ack-gated, guardrails kept).
-4. ✅ Pushed to https://github.com/gautamkr0104/ToneAI via gh CLI from tools folder.
+4. ✅ Pushed to https://github.com/gautamkr0104/ToneAI — now **PUBLIC** (was created private, user approved the visibility change).
+
+**CORRECTION (user feedback):** gh CLI was already at **`D:/tools/gh/bin/gh.exe`** (v2.97.0, logged in as gautamkr0104) — I failed to check D:/tools and had downloaded a duplicate to C:/toneai-tools/bin. Duplicate DELETED; all gh operations now/after use `D:/tools/gh/bin/gh.exe`. Repo existence + visibility verified with the user's gh binary.
 
 Backend 48/48 tests. Android: DraftLogicTest 6 + SessionStateTest 1 (unit), assembleDebug + assembleRelease successful. To run end-to-end: start backend (`npm run dev` in backend/ — mock AI + mock IG by default), install D:/ToneAI.apk on phone/emulator, sign up, connect demo account, import IG export or chat normally.
 4. Rebuild assembleDebug → copy APK to `D:/ToneAI.apk`.
