@@ -172,6 +172,21 @@ User wants an antigravity-agent-style "turbo" mode: AI sends without asking firs
 - ✅ **APK copied to `D:/ToneAI.apk` (18,661,056 bytes, built 15:45, includes IG chat import + Turbo mode).**
 
 → NEXT: git init in toneai/ + repo-local git identity + gh repo create + push.
+
+### GitHub push DONE ✅
+- `git init` in toneai/ + repo-local identity (gautamkr0104 / noreply email) + `git config --global --add safe.directory 'D:/vs code projects/toneai'` (dubious-ownership fix).
+- .gitignore extended: build_log*.txt, test_log.txt, release_log.txt, build_pid.txt excluded (were staged, removed).
+- Commit `cfa6d5d` — 90 files: full backend + android + docs + migrations + tests.
+- `gh repo create ToneAI --private --source . --push` → **https://github.com/gautamkr0104/ToneAI** (PRIVATE, branch master, commit verified via API).
+- gh CLI lives at `C:/toneai-tools/bin/gh.exe` (user's tools folder as requested).
+
+## ✅ DAY 3 ADD-ONS COMPLETE — ALL USER REQUESTS SHIPPED
+1. ✅ IG chat drop-in import → tone learning (backend parser + Android file picker UI).
+2. ✅ APK at **`D:/ToneAI.apk`** (18,661,056 bytes, debug-signed, installable).
+3. ✅ Turbo mode (AI sends without prior approval, ack-gated, guardrails kept).
+4. ✅ Pushed to https://github.com/gautamkr0104/ToneAI via gh CLI from tools folder.
+
+Backend 48/48 tests. Android: DraftLogicTest 6 + SessionStateTest 1 (unit), assembleDebug + assembleRelease successful. To run end-to-end: start backend (`npm run dev` in backend/ — mock AI + mock IG by default), install D:/ToneAI.apk on phone/emulator, sign up, connect demo account, import IG export or chat normally.
 4. Rebuild assembleDebug → copy APK to `D:/ToneAI.apk`.
 5. git init in toneai/ (repo-local user config), .gitignore already good, gh repo create <name> --private --source . --push.
 6. Final update to PROGRESS.md.
