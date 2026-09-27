@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+*.log
+.kotlin/
+build/
+.gradle/
+local.properties
+*.apk.idsig
+.idea/
+.DS_Store
+
+# build logs
+android/build_log*.txt
+android/test_log.txt
+android/release_log.txt
+android/build_pid.txt
